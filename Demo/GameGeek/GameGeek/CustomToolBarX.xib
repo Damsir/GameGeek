@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLr-pc-OKT">
+                    <rect key="frame" x="10" y="10" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="HC7-Fn-CVT"/>
+                    </constraints>
+                    <state key="normal" image="return">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVr-J0-6SC">
+                    <rect key="frame" x="338" y="10" width="25" height="25"/>
+                    <state key="normal" image="share">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgY-vL-d8B">
+                    <rect key="frame" x="276" y="10" width="54" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="kqA-Ig-QEn"/>
+                    </constraints>
+                    <state key="normal" image="like">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQC-ut-9sk">
+                    <rect key="frame" x="245" y="8" width="29" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="29" id="cTZ-yX-RID"/>
+                    </constraints>
+                    <state key="normal" image="收藏">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lgY-vL-d8B" secondAttribute="bottom" constant="9" id="0Kk-8o-uZW"/>
+                <constraint firstItem="wLr-pc-OKT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="0rX-fL-ygU"/>
+                <constraint firstItem="lgY-vL-d8B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="75G-1b-ZCW"/>
+                <constraint firstAttribute="bottom" secondItem="wLr-pc-OKT" secondAttribute="bottom" constant="9" id="951-UB-HIj"/>
+                <constraint firstItem="HQC-ut-9sk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="GB2-QD-lNJ"/>
+                <constraint firstAttribute="bottom" secondItem="DVr-J0-6SC" secondAttribute="bottom" constant="9" id="IXk-AZ-m4t"/>
+                <constraint firstItem="lgY-vL-d8B" firstAttribute="leading" secondItem="HQC-ut-9sk" secondAttribute="trailing" constant="2" id="K4X-Kg-d35"/>
+                <constraint firstItem="DVr-J0-6SC" firstAttribute="leading" secondItem="lgY-vL-d8B" secondAttribute="trailing" constant="8" id="Lhg-Jf-l5k"/>
+                <constraint firstAttribute="bottom" secondItem="HQC-ut-9sk" secondAttribute="bottom" id="RVG-j2-zKi"/>
+                <constraint firstItem="wLr-pc-OKT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="TjS-ey-g8P"/>
+                <constraint firstAttribute="trailing" secondItem="DVr-J0-6SC" secondAttribute="trailing" constant="12" id="aAp-Fp-LHi"/>
+                <constraint firstItem="DVr-J0-6SC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ckR-UJ-bde"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="wLr-pc-OKT" id="LbN-d3-FH3"/>
+                <outlet property="likeBtn" destination="lgY-vL-d8B" id="tSC-8K-3lD"/>
+                <outlet property="saveBtn" destination="HQC-ut-9sk" id="HRb-wO-eZJ"/>
+                <outlet property="shareBtn" destination="DVr-J0-6SC" id="4Nh-fu-ZhI"/>
+            </connections>
+            <point key="canvasLocation" x="334.5" y="305"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="like" width="28" height="25"/>
+        <image name="return" width="25" height="25"/>
+        <image name="share" width="25" height="25"/>
+        <image name="收藏" width="20" height="19"/>
+    </resources>
+</document>
